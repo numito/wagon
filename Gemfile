@@ -6,10 +6,8 @@ gemspec
 # Mac OS X
 gem 'rb-fsevent', '~> 0.10.3', require: 'rb-fsevent' if RUBY_PLATFORM.include?('darwin')
 
-# Unix
-gem 'therubyracer', require: 'v8', platforms: :ruby unless RUBY_PLATFORM.include?('darwin')
-
-gem 'rb-inotify', '~> 0.10.0', require: 'rb-inotify' if RUBY_PLATFORM.include?('linux')
+# linux
+gem 'rb-inotify', '~> 0.10.1', require: 'rb-inotify' if RUBY_PLATFORM.include?('linux')
 
 # Windows
 gem 'wdm', '~> 0.1.1', require: 'wdm' if RUBY_PLATFORM =~ /mswin|mingw/i
